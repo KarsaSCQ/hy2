@@ -1,0 +1,123 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: :9090
+
+geodata-mode: false
+geox-url:
+  geosite: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite-lite.dat"
+  geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat"
+  mmdb: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country-lite.mmdb"
+geo-auto-update: true
+geo-update-interval: 24
+
+proxies:
+  - {type: hysteria2,name: hy2, server: 107.172.5.56, port: 443, client-fingerprint: chrome,   password: kirkir.top,  sni: 7533666.top,  skip-cert-verify: true, udp: true, }
+
+  - {name: edtunnel-cxu.pages.dev-HTTPS-443, server: edtunnel-cxu.pages.dev, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-443-cdn.xn--b6gac.eu.org:443-EDtunnel, server: cdn.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-443 2, server: edtunnel-cxu.pages.dev, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-443-cdn-all.xn--b6gac.eu.org:443-EDtunnel, server: cdn-all.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-8443, server: edtunnel-cxu.pages.dev, port: 8443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-8443-cdn.xn--b6gac.eu.org:443-EDtunnel, server: cdn.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-8443 2, server: edtunnel-cxu.pages.dev, port: 8443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-8443-cdn-all.xn--b6gac.eu.org:443-EDtunnel, server: cdn-all.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2053, server: edtunnel-cxu.pages.dev, port: 2053, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2053-cdn.xn--b6gac.eu.org:443-EDtunnel, server: cdn.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2053 2, server: edtunnel-cxu.pages.dev, port: 2053, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2053-cdn-all.xn--b6gac.eu.org:443-EDtunnel, server: cdn-all.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2096, server: edtunnel-cxu.pages.dev, port: 2096, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2096-cdn.xn--b6gac.eu.org:443-EDtunnel, server: cdn.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2096 2, server: edtunnel-cxu.pages.dev, port: 2096, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2096-cdn-all.xn--b6gac.eu.org:443-EDtunnel, server: cdn-all.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2087, server: edtunnel-cxu.pages.dev, port: 2087, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2087-cdn.xn--b6gac.eu.org:443-EDtunnel, server: cdn.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2087 2, server: edtunnel-cxu.pages.dev, port: 2087, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2087-cdn-all.xn--b6gac.eu.org:443-EDtunnel, server: cdn-all.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2083, server: edtunnel-cxu.pages.dev, port: 2083, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2083-cdn.xn--b6gac.eu.org:443-EDtunnel, server: cdn.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2083 2, server: edtunnel-cxu.pages.dev, port: 2083, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+  - {name: edtunnel-cxu.pages.dev-HTTPS-2083-cdn-all.xn--b6gac.eu.org:443-EDtunnel, server: cdn-all.xn--b6gac.eu.org, port: 443, client-fingerprint: random, type: vless, uuid: ba74cb4c-4a63-4939-9656-8bbd80becc65, tls: true, tfo: false, skip-cert-verify: true, servername: edtunnel-cxu.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edtunnel-cxu.pages.dev}}}
+proxy-groups:
+  - name: Mine
+    type: select
+    proxies:
+      - hy2
+      - GOOGLEAPI
+  - name: GOOGLEAPI
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - edtunnel-cxu.pages.dev-HTTPS-443
+      - edtunnel-cxu.pages.dev-HTTPS-443-cdn.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-443 2
+      - edtunnel-cxu.pages.dev-HTTPS-443-cdn-all.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-8443
+      - edtunnel-cxu.pages.dev-HTTPS-8443-cdn.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-8443 2
+      - edtunnel-cxu.pages.dev-HTTPS-8443-cdn-all.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-2053
+      - edtunnel-cxu.pages.dev-HTTPS-2053-cdn.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-2053 2
+      - edtunnel-cxu.pages.dev-HTTPS-2053-cdn-all.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-2096
+      - edtunnel-cxu.pages.dev-HTTPS-2096-cdn.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-2096 2
+      - edtunnel-cxu.pages.dev-HTTPS-2096-cdn-all.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-2087
+      - edtunnel-cxu.pages.dev-HTTPS-2087-cdn.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-2087 2
+      - edtunnel-cxu.pages.dev-HTTPS-2087-cdn-all.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-2083
+      - edtunnel-cxu.pages.dev-HTTPS-2083-cdn.xn--b6gac.eu.org:443-EDtunnel
+      - edtunnel-cxu.pages.dev-HTTPS-2083 2
+      - edtunnel-cxu.pages.dev-HTTPS-2083-cdn-all.xn--b6gac.eu.org:443-EDtunnel
+rules:
+  - GEOIP,CN,DIRECT
+  - GEOSITE,CN,DIRECT
+  - DOMAIN-SUFFIX,googleadservices.com,DIRECT
+  - DOMAIN-SUFFIX,imgse.com,DIRECT
+  - DOMAIN-SUFFIX,s21.ax1x.com,DIRECT
+
+
+  - DOMAIN-SUFFIX,acl4.ssr,DIRECT
+  - DOMAIN-SUFFIX,ip6-localhost,DIRECT
+  - DOMAIN-SUFFIX,ip6-loopback,DIRECT
+  - DOMAIN-SUFFIX,lan,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,localhost,DIRECT
+  - IP-CIDR,0.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,198.18.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+
+  #自己的
+  # PROCESS-NAME...
+  - PROCESS-NAME,Todo.exe,DIRECT
+
+  # DOMAIN-SUFFIX...
+  - DOMAIN-SUFFIX,accounts.google.com,GOOGLEAPI
+  - DOMAIN-SUFFIX,warhut.cn,DIRECT
+  - DOMAIN-SUFFIX,cycanime.com,DIRECT
+  - DOMAIN-SUFFIX,8xsk.com,DIRECT
+  - DOMAIN-SUFFIX,steamdb.info,DIRECT
+  - DOMAIN-SUFFIX,fanyi.youdao.com,DIRECT
+  - DOMAIN-SUFFIX,googleapis.com,GOOGLEAPI
+  - DOMAIN-SUFFIX,googlevideo.com,GOOGLEAPI
+  # - DOMAIN-SUFFIX,netflix.com,GOOGLEAPI
+  # - DOMAIN-SUFFIX,nflxso.net,GOOGLEAPI
+  # - DOMAIN-SUFFIX,nflxext.com,GOOGLEAPI
+
+  - MATCH,hy2
