@@ -115,7 +115,6 @@ rules:
   - DOMAIN-SUFFIX,steamdb.info,DIRECT
   - DOMAIN-SUFFIX,fanyi.youdao.com,DIRECT
   - DOMAIN-SUFFIX,googleapis.com,GOOGLEAPI
-  - DOMAIN-SUFFIX,googlevideo.com,GOOGLEAPI
   # - DOMAIN-SUFFIX,netflix.com,GOOGLEAPI
   # - DOMAIN-SUFFIX,nflxso.net,GOOGLEAPI
   # - DOMAIN-SUFFIX,nflxext.com,GOOGLEAPI
