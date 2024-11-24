@@ -133,7 +133,7 @@ rules:
   - DOMAIN-SUFFIX,wifi.cmcc,DIRECT
   - DOMAIN-SUFFIX,ol.epicgames.com,DIRECT
   - DOMAIN-SUFFIX,dizhensubao.getui.com,DIRECT
-  - DOMAIN,dl.google.com,DIRECT
+  
   - DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
   - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,DIRECT
   - DOMAIN,origin-a.akamaihd.net,DIRECT
