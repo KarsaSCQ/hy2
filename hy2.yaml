@@ -7,8 +7,8 @@ external-controller: :9090
 
 geodata-mode: true
 geox-url:
-  geosite: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite-lite.dat"
-  geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat"
+  geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
   mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb"
 geo-auto-update: true
 geo-update-interval: 24
@@ -151,7 +151,15 @@ rule-providers:
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
     path: ./ruleset/applications.yaml
-    interval: 86400      
+    interval: 86400   
+
+  # 照葫芦画瓢
+  GoogleFCM_No_Resolve:
+    type: http
+    behavior: classical
+    url: "https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash/GoogleFCM/GoogleFCM_No_Resolve.yaml"
+    path: ./ruleset/GoogleFCM_No_Resolve.yaml
+    interval: 86400  
       
 rules:
 
@@ -187,7 +195,8 @@ rules:
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,cncidr,DIRECT
   - RULE-SET,telegramcidr,hy2
-  - GEOSITE,googlefcm,DIRECT
+  #自己添加的
+  - RULE-SET，GoogleFCM_No_Resolve，DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,hy2
