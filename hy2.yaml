@@ -26,7 +26,7 @@ dns:
   fallback:
     - https://1.1.1.1/dns-query             # Cloudflare (国外，支持H3)
     - https://8.8.8.8/dns-query             # Google DNS (国外，支持H3)
-    - https://8.8.4.4/dns-query             # Quad9 (备选，国外，支持H3)
+    - https://8.8.4.4/dns-query            
   fallback-filter:
     geoip: true
     ipcidr:
@@ -69,27 +69,6 @@ rule-providers:
     path: ./ruleset/reject.yaml
     interval: 86400
 
-  icloud:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
-    path: ./ruleset/icloud.yaml
-    interval: 86400
-
-  apple:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-    path: ./ruleset/apple.yaml
-    interval: 86400
-
-  google:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-    path: ./ruleset/google.yaml
-    interval: 86400
-
   proxy:
     type: http
     behavior: domain
@@ -116,13 +95,6 @@ rule-providers:
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
     path: ./ruleset/gfw.yaml
-    interval: 86400
-
-  tld-not-cn:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
-    path: ./ruleset/tld-not-cn.yaml
     interval: 86400
 
   telegramcidr:
@@ -163,41 +135,36 @@ rule-providers:
       
 rules:
 
-  #自己的
-  # - PROCESS-NAME...
-  - PROCESS-NAME,Todo.exe,DIRECT
-  # - PROCESS-NAME,BitComet_x64.exe,DIRECT
-  # - PROCESS-NAME,plugin_eMule.exe,DIRECT
-  
+ # 1. 局域网IP直连
+- GEOIP,LAN,DIRECT
 
-  # DOMAIN-KEYWORD...
-  - DOMAIN-KEYWORD,googleapis.com,hy2
+# 2. 中国大陆IP直连
+- GEOIP,CN,DIRECT
 
-  # DOMAIN-SUFFIX...
-  - DOMAIN-SUFFIX,fishhawk.top,DIRECT
-  - DOMAIN-SUFFIX,warhut.cn,DIRECT
-  - DOMAIN-SUFFIX,cycanime.com,DIRECT
-  - DOMAIN-SUFFIX,8xsk.com,DIRECT
-  - DOMAIN-SUFFIX,steamdb.info,DIRECT
-  
-  
-  #GITHUB
-  - RULE-SET,applications,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,hy2
-  - RULE-SET,proxy,hy2
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,lancidr,DIRECT
-  - RULE-SET,cncidr,DIRECT
-  - RULE-SET,telegramcidr,hy2
-  #自己添加的
-  - RULE-SET,GoogleFCM_No_Resolve,DIRECT
-  - GEOSITE,CN,DIRECT
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,hy2
+# 3. 中国大陆域名直连
+- GEOSITE,CN,DIRECT
+
+# 4. 自定义规则直连
+- DOMAIN-SUFFIX,fishhawk.top,DIRECT
+- DOMAIN-SUFFIX,warhut.cn,DIRECT
+- DOMAIN-SUFFIX,cycanime.com,DIRECT
+- DOMAIN-SUFFIX,8xsk.com,DIRECT
+- DOMAIN-SUFFIX,steamdb.info,DIRECT
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+
+# 5. 系统/应用直连
+- RULE-SET,direct,DIRECT
+- RULE-SET,applications,DIRECT
+- RULE-SET,GoogleFCM_No_Resolve,DIRECT
+
+# 6. 私有IP和局域网段直连
+- RULE-SET,private,DIRECT
+- RULE-SET,lancidr,DIRECT
+- RULE-SET,cncidr,DIRECT
+
+# 7. 拒绝广告
+- RULE-SET,reject,REJECT
+
+# 8. 兜底：全走代理
+- MATCH,hy2
