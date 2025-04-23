@@ -196,7 +196,7 @@ rules:
   - RULE-SET,cncidr,DIRECT
   - RULE-SET,telegramcidr,hy2
   #自己添加的
-  - RULE-SET，GoogleFCM_No_Resolve，DIRECT
+  - RULE-SET,GoogleFCM_No_Resolve,DIRECT
   - GEOSITE，CN,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
