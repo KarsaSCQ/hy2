@@ -97,9 +97,6 @@ rule-providers:
       
 rules:
 
- # 1. 局域网IP直连
-- GEOIP,LAN,DIRECT
-
 # 2. 中国大陆IP直连
 - GEOIP,CN,DIRECT
 
