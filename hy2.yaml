@@ -119,7 +119,6 @@ rules:
 
 # 6. 私有IP和局域网段直连
 - RULE-SET,private,DIRECT
-- RULE-SET,lancidr,DIRECT
 - RULE-SET,cncidr,DIRECT
 
 # 7. 拒绝广告
