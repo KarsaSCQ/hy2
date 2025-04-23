@@ -13,44 +13,6 @@ geox-url:
 geo-auto-update: true
 geo-update-interval: 24
 
-dns:
-  enable: true
-  ipv6: false
-  prefer-h3: true           # 优先使用 HTTP/3 (QUIC) 加速解析
-  enhanced-mode: fake-ip    # 或 redir-host，看你需求
-  fake-ip-range: 198.18.0.0/15
-  nameserver:
-    - https://doh.pub/dns-query           # 百度公共 DoH (国内加密DNS)
-    - https://dns.alidns.com/dns-query     # 阿里公共 DoH (国内加密DNS)
-    - https://doh.dnspod.cn/dns-query      # 腾讯 DNSPod DoH (国内加密DNS)
-  fallback:
-    - https://1.1.1.1/dns-query             # Cloudflare (国外，支持H3)
-    - https://8.8.8.8/dns-query             # Google DNS (国外，支持H3)
-    - https://8.8.4.4/dns-query            
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4   # 保持默认，规避部分国外保留地址
-  default-nameserver:
-    - 223.5.5.5       # 阿里备用，兜底解析
-    - 114.114.114.114 # 114备用，兜底解析
-
-nameserver-policy:
-  'geosite:cn':
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-    - https://doh.dnspod.cn/dns-query
-  'geosite:geolocation-!cn':
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-    - https://8.8.4.4/dns-query
-  'geosite:private,apple':
-    - https://dns.alidns.com/dns-query
-  '+.lan':
-    - 223.5.5.5
-  '+.local':
-    - 223.5.5.5
-
 
 proxies:
   - {type: hysteria2,name: hy2, server: 107.172.5.56, port: 443, client-fingerprint: chrome,   password: kirkir.top,  sni: 7533666.top,  skip-cert-verify: true, udp: true, }
