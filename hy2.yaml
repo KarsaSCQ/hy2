@@ -215,6 +215,7 @@ rules:
 - DOMAIN-SUFFIX,gemini.google.com,Other
 - DOMAIN-SUFFIX,dlsite.com,Other
 - DOMAIN-SUFFIX,dmm.com,Other
+- DOMAIN-SUFFIX,google.dev,Other
 
 # 8. 兜底：全走代理
 - MATCH,hy2
