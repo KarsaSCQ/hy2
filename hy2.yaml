@@ -269,8 +269,8 @@ rules:
 - DOMAIN-SUFFIX,dlsite.com,Japan
 - DOMAIN-SUFFIX,dmm.com,Japan
 # 谷歌ai
-- DOMAIN-SUFFIX,gemini.google.com,manual
-- DOMAIN-SUFFIX,aistudio.google.com,manual
+- DOMAIN-SUFFIX,gemini.google.com,Manual
+- DOMAIN-SUFFIX,aistudio.google.com,Manual
 
 # 9. 兜底：全走代理
 - MATCH,hy2
