@@ -63,7 +63,7 @@ proxies:
   - { name: 尼日利亚NI-T, type: trojan, server: ni.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: ni.mjt000.com }
 
 proxy-groups:
-  - name: manual
+  - name: Manual
     type: select
     proxies:
       - Fastest
