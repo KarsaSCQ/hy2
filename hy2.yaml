@@ -127,50 +127,50 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
 
-- name: 手动选择
-  type: select
-  proxies:
-    - Other
-    - 新加坡SG-T
-    - 柬埔寨KH-T
-    - 美国USLA-T-GPT
-    - 新加坡-优化
-    - 新加坡-优化2
-    - 新加坡-优化3
-    - 香港HY-优化
-    - 香港HY-优化2
-    - 香港WAP-优化
-    - 香港WAP-优化2
-    - 香港wap-T
-    - 台湾WAP-T-GPT
-    - 越南VN-T
-    - 印度-优化
-    - 台湾-优化
-    - 台湾-优化2-GPT
-    - 台湾-优化3
-    - 美国LA-优化-GPT
-    - 美国LA-优化2-GPT
-    - 美国LA-优化3-GPT
-    - 加拿大-优化
-    - 加拿大-优化2
-    - 加拿大-优化3
-    - 德国-优化
-    - 德国-优化2
-    - 英国-优化-GPT
-    - 英国-优化2
-    - 英国-优化3
-    - 澳大利亚AU-T
-    - 土耳其TR-T
-    - 朝鲜KP-T
-    - 意大利IT-T
-    - 葡萄牙PT-T
-    - 俄罗斯RU-T
-    - 哈萨克斯坦KZ-T
-    - 乌克兰UA-T
-    - 以色列IL-T
-    - 英国UK-T
-    - 阿根廷AR-T
-    - 尼日利亚NI-T
+  - name: 手动选择
+    type: select
+    proxies:
+      - Other
+      - 新加坡SG-T
+      - 柬埔寨KH-T
+      - 美国USLA-T-GPT
+      - 新加坡-优化
+      - 新加坡-优化2
+      - 新加坡-优化3
+      - 香港HY-优化
+      - 香港HY-优化2
+      - 香港WAP-优化
+      - 香港WAP-优化2
+      - 香港wap-T
+      - 台湾WAP-T-GPT
+      - 越南VN-T
+      - 印度-优化
+      - 台湾-优化
+      - 台湾-优化2-GPT
+      - 台湾-优化3
+      - 美国LA-优化-GPT
+      - 美国LA-优化2-GPT
+      - 美国LA-优化3-GPT
+      - 加拿大-优化
+      - 加拿大-优化2
+      - 加拿大-优化3
+      - 德国-优化
+      - 德国-优化2
+      - 英国-优化-GPT
+      - 英国-优化2
+      - 英国-优化3
+      - 澳大利亚AU-T
+      - 土耳其TR-T
+      - 朝鲜KP-T
+      - 意大利IT-T
+      - 葡萄牙PT-T
+      - 俄罗斯RU-T
+      - 哈萨克斯坦KZ-T
+      - 乌克兰UA-T
+      - 以色列IL-T
+      - 英国UK-T
+      - 阿根廷AR-T
+      - 尼日利亚NI-T
 
 
 
