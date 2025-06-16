@@ -67,23 +67,24 @@ proxy-groups:
     type: select
     proxies:
       - Fastest
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T-GPT
-      - 新加坡-优化
-      - 新加坡-优化2
-      - 新加坡-优化3
       - 香港HY-优化
       - 香港HY-优化2
       - 香港WAP-优化
       - 香港WAP-优化2
       - 香港wap-T
       - 台湾WAP-T-GPT
-      - 越南VN-T
-      - 印度-优化
       - 台湾-优化
       - 台湾-优化2-GPT
       - 台湾-优化3
+      - 新加坡SG-T
+      - 新加坡-优化
+      - 新加坡-优化2
+      - 新加坡-优化3
+      - 日本-优化
+      - 日本-优化2
+      - 日本-优化3
+      - 日本JP-T
+      - 美国USLA-T-GPT
       - 美国LA-优化-GPT
       - 美国LA-优化2-GPT
       - 美国LA-优化3-GPT
@@ -95,7 +96,11 @@ proxy-groups:
       - 英国-优化-GPT
       - 英国-优化2
       - 英国-优化3
+      - 英国UK-T
       - 澳大利亚AU-T
+      - 柬埔寨KH-T
+      - 越南VN-T
+      - 印度-优化
       - 土耳其TR-T
       - 朝鲜KP-T
       - 意大利IT-T
@@ -104,7 +109,6 @@ proxy-groups:
       - 哈萨克斯坦KZ-T
       - 乌克兰UA-T
       - 以色列IL-T
-      - 英国UK-T
       - 阿根廷AR-T
       - 尼日利亚NI-T
 
@@ -131,17 +135,16 @@ proxy-groups:
   - name: Fastest
     type: url-test
     proxies:
+      - 日本-优化
+      - 日本-优化2
+      - 日本-优化3
+      - 日本JP-T
       - 新加坡SG-T
       - 柬埔寨KH-T
       - 美国USLA-T-GPT
       - 新加坡-优化
       - 新加坡-优化2
       - 新加坡-优化3
-      - 香港HY-优化
-      - 香港HY-优化2
-      - 香港WAP-优化
-      - 香港WAP-优化2
-      - 香港wap-T
       - 台湾WAP-T-GPT
       - 越南VN-T
       - 印度-优化
