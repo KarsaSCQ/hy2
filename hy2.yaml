@@ -281,6 +281,7 @@ rules:
 # 一般
 - DOMAIN-SUFFIX,manhuagui.com,Japan
 - DOMAIN-SUFFIX,mhgui.com,Japan
+- DOMAIN-SUFFIX,hamreus.com,Japan
 # 日系
 - DOMAIN-SUFFIX,dlsite.com,Japan
 - DOMAIN-SUFFIX,dmm.com,Japan
