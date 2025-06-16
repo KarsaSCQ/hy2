@@ -275,6 +275,8 @@ rules:
 - RULE-SET,reject,REJECT
 
 # 8.  非直连
+# 台湾
+- DOMAIN-SUFFIX,manhuagui.com,Taiwan
 # 日系
 - DOMAIN-SUFFIX,dlsite.com,Japan
 - DOMAIN-SUFFIX,dmm.com,Japan
