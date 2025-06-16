@@ -278,9 +278,9 @@ rules:
 - RULE-SET,reject,REJECT
 
 # 8.  非直连
-# 台湾
-- DOMAIN-SUFFIX,manhuagui.com,台湾WAP-T-GPT
-- DOMAIN-SUFFIX,mhgui.com,台湾WAP-T-GPT
+# 一般
+- DOMAIN-SUFFIX,manhuagui.com,Japan
+- DOMAIN-SUFFIX,mhgui.com,Japan
 # 日系
 - DOMAIN-SUFFIX,dlsite.com,Japan
 - DOMAIN-SUFFIX,dmm.com,Japan
