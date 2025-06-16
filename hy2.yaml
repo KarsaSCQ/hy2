@@ -279,7 +279,7 @@ rules:
 
 # 8.  非直连
 # 台湾
-- DOMAIN-SUFFIX,manhuagui.com,Taiwan
+- DOMAIN-SUFFIX,manhuagui.com,台湾WAP-T-GPT
 # 日系
 - DOMAIN-SUFFIX,dlsite.com,Japan
 - DOMAIN-SUFFIX,dmm.com,Japan
