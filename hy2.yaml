@@ -256,7 +256,7 @@ rules:
 - GEOSITE,CN,DIRECT
 
 # 4. 自定义规则直连
-- DOMAIN-SUFFIX,fishhawk.top,DIRECT
+#- DOMAIN-SUFFIX,fishhawk.top,DIRECT
 - DOMAIN-SUFFIX,warhut.cn,DIRECT
 - DOMAIN-SUFFIX,cycanime.com,DIRECT
 - DOMAIN-SUFFIX,8xsk.com,DIRECT
