@@ -17,165 +17,165 @@ geo-update-interval: 24
 proxies:
   - {type: hysteria2,name: hy2, server: 107.172.5.56, port: 443, client-fingerprint: chrome,   password: kirkir.top,   sni: 7533666.top,   skip-cert-verify: true, udp: true, }
 
-  - { name: 日本-优化, type: vmess, server: yes.mojcn.com, port: 16617, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 日本-优化2, type: vmess, server: m.cnmjin.net, port: 16617, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 日本-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16617, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 日本JP-T, type: trojan, server: jp.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: jp.mjt000.com, skip-cert-verify: true }
-  - { name: 新加坡SG-T, type: trojan, server: sg.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: sg.mjt000.com, skip-cert-verify: true }
-  - { name: 柬埔寨KH-T, type: trojan, server: kh.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: kh.mjt000.com }
-  - { name: 美国USLA-T-GPT, type: trojan, server: usla.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: usla.mjt000.com }
-  - { name: 新加坡-优化, type: vmess, server: yes.mojcn.com, port: 16618, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 新加坡-优化2, type: vmess, server: m.cnmjin.net, port: 16618, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 新加坡-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16618, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 香港HY-优化, type: vmess, server: yes.mojcn.com, port: 16632, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 香港HY-优化2, type: vmess, server: m.cnmjin.net, port: 16632, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 香港WAP-优化, type: vmess, server: yes.mojcn.com, port: 16622, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 香港WAP-优化2, type: vmess, server: m.cnmjin.net, port: 16622, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 香港wap-T, type: trojan, server: waphk.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: waphk.mjt000.com }
-  - { name: 台湾WAP-T-GPT, type: trojan, server: hinet.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: hinet.mjt000.com }
-  - { name: 越南VN-T, type: trojan, server: vn.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: vn.mjt000.com }
-  - { name: 印度-优化, type: vmess, server: yes.mojcn.com, port: 16626, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 台湾-优化, type: vmess, server: yes.mojcn.com, port: 16616, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 台湾-优化2-GPT, type: vmess, server: m.cnmjin.net, port: 16616, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 台湾-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16616, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 美国LA-优化-GPT, type: vmess, server: yes.mojcn.com, port: 16648, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 美国LA-优化2-GPT, type: vmess, server: m.cnmjin.net, port: 16648, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 美国LA-优化3-GPT, type: vmess, server: t.cnmjcn.cyou, port: 16648, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 加拿大-优化, type: vmess, server: yes.mojcn.com, port: 16641, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 加拿大-优化2, type: vmess, server: m.cnmjcn.com, port: 16641, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 加拿大-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16641, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 德国-优化, type: vmess, server: yes.mojcn.com, port: 16644, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 德国-优化2, type: vmess, server: m.cnmjcn.com, port: 16644, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 英国-优化-GPT, type: vmess, server: yes.mojcn.com, port: 16645, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 英国-优化2, type: vmess, server: m.cnmjin.net, port: 16645, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 英国-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16645, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
-  - { name: 澳大利亚AU-T, type: trojan, server: au.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: au.mjt000.com }
-  - { name: 土耳其TR-T, type: trojan, server: tr.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: tr.mjt000.com }
-  - { name: 朝鲜KP-T, type: trojan, server: kp.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: kp.mjt000.com }
-  - { name: 意大利IT-T, type: trojan, server: it.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: it.mjt000.com }
-  - { name: 葡萄牙PT-T, type: trojan, server: pt.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: pt.mjt000.com }
-  - { name: 俄罗斯RU-T, type: trojan, server: ru.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: ru.mjt000.com }
-  - { name: 哈萨克斯坦KZ-T, type: trojan, server: kz.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: kz.mjt000.com }
-  - { name: 乌克兰UA-T, type: trojan, server: ua.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: ua.mjt000.com }
-  - { name: 以色列IL-T, type: trojan, server: il.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: il.mjt000.com }
-  - { name: 英国UK-T, type: trojan, server: uk.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: uk.mjt000.com }
-  - { name: 阿根廷AR-T, type: trojan, server: ar.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: ar.mjt000.com }
-  - { name: 尼日利亚NI-T, type: trojan, server: ni.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: ni.mjt000.com }
+  # - { name: 日本-优化, type: vmess, server: yes.mojcn.com, port: 16617, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 日本-优化2, type: vmess, server: m.cnmjin.net, port: 16617, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 日本-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16617, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 日本JP-T, type: trojan, server: jp.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: jp.mjt000.com, skip-cert-verify: true }
+  # - { name: 新加坡SG-T, type: trojan, server: sg.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: sg.mjt000.com, skip-cert-verify: true }
+  # - { name: 柬埔寨KH-T, type: trojan, server: kh.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: kh.mjt000.com }
+  # - { name: 美国USLA-T-GPT, type: trojan, server: usla.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: usla.mjt000.com }
+  # - { name: 新加坡-优化, type: vmess, server: yes.mojcn.com, port: 16618, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 新加坡-优化2, type: vmess, server: m.cnmjin.net, port: 16618, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 新加坡-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16618, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 香港HY-优化, type: vmess, server: yes.mojcn.com, port: 16632, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 香港HY-优化2, type: vmess, server: m.cnmjin.net, port: 16632, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 香港WAP-优化, type: vmess, server: yes.mojcn.com, port: 16622, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 香港WAP-优化2, type: vmess, server: m.cnmjin.net, port: 16622, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 香港wap-T, type: trojan, server: waphk.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: waphk.mjt000.com }
+  # - { name: 台湾WAP-T-GPT, type: trojan, server: hinet.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: hinet.mjt000.com }
+  # - { name: 越南VN-T, type: trojan, server: vn.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: vn.mjt000.com }
+  # - { name: 印度-优化, type: vmess, server: yes.mojcn.com, port: 16626, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 台湾-优化, type: vmess, server: yes.mojcn.com, port: 16616, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 台湾-优化2-GPT, type: vmess, server: m.cnmjin.net, port: 16616, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 台湾-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16616, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 美国LA-优化-GPT, type: vmess, server: yes.mojcn.com, port: 16648, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 美国LA-优化2-GPT, type: vmess, server: m.cnmjin.net, port: 16648, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 美国LA-优化3-GPT, type: vmess, server: t.cnmjcn.cyou, port: 16648, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 加拿大-优化, type: vmess, server: yes.mojcn.com, port: 16641, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 加拿大-优化2, type: vmess, server: m.cnmjcn.com, port: 16641, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 加拿大-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16641, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 德国-优化, type: vmess, server: yes.mojcn.com, port: 16644, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 德国-优化2, type: vmess, server: m.cnmjcn.com, port: 16644, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 英国-优化-GPT, type: vmess, server: yes.mojcn.com, port: 16645, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 英国-优化2, type: vmess, server: m.cnmjin.net, port: 16645, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 英国-优化3, type: vmess, server: t.cnmjcn.cyou, port: 16645, uuid: ad2b5cee-f61d-4060-8726-5fedf509ff5d, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }, ws-path: /, ws-headers: { Host: a75b165b6212875c9aa9db1e247d1912.mobgslb.tbcache.com } }
+  # - { name: 澳大利亚AU-T, type: trojan, server: au.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: au.mjt000.com }
+  # - { name: 土耳其TR-T, type: trojan, server: tr.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: tr.mjt000.com }
+  # - { name: 朝鲜KP-T, type: trojan, server: kp.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: kp.mjt000.com }
+  # - { name: 意大利IT-T, type: trojan, server: it.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: it.mjt000.com }
+  # - { name: 葡萄牙PT-T, type: trojan, server: pt.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: pt.mjt000.com }
+  # - { name: 俄罗斯RU-T, type: trojan, server: ru.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: ru.mjt000.com }
+  # - { name: 哈萨克斯坦KZ-T, type: trojan, server: kz.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: kz.mjt000.com }
+  # - { name: 乌克兰UA-T, type: trojan, server: ua.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: ua.mjt000.com }
+  # - { name: 以色列IL-T, type: trojan, server: il.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: il.mjt000.com }
+  # - { name: 英国UK-T, type: trojan, server: uk.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: uk.mjt000.com }
+  # - { name: 阿根廷AR-T, type: trojan, server: ar.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: ar.mjt000.com }
+  # - { name: 尼日利亚NI-T, type: trojan, server: ni.mjt000.com, port: 443, password: ad2b5cee-f61d-4060-8726-5fedf509ff5d, udp: true, sni: ni.mjt000.com }
 
-proxy-groups:
-  - name: Manual
-    type: select
-    proxies:
-      - Fastest
-      - 香港HY-优化
-      - 香港HY-优化2
-      - 香港WAP-优化
-      - 香港WAP-优化2
-      - 香港wap-T
-      - 台湾WAP-T-GPT
-      - 台湾-优化
-      - 台湾-优化2-GPT
-      - 台湾-优化3
-      - 新加坡SG-T
-      - 新加坡-优化
-      - 新加坡-优化2
-      - 新加坡-优化3
-      - 日本-优化
-      - 日本-优化2
-      - 日本-优化3
-      - 日本JP-T
-      - 美国USLA-T-GPT
-      - 美国LA-优化-GPT
-      - 美国LA-优化2-GPT
-      - 美国LA-优化3-GPT
-      - 加拿大-优化
-      - 加拿大-优化2
-      - 加拿大-优化3
-      - 德国-优化
-      - 德国-优化2
-      - 英国-优化-GPT
-      - 英国-优化2
-      - 英国-优化3
-      - 英国UK-T
-      - 澳大利亚AU-T
-      - 柬埔寨KH-T
-      - 越南VN-T
-      - 印度-优化
-      - 土耳其TR-T
-      - 朝鲜KP-T
-      - 意大利IT-T
-      - 葡萄牙PT-T
-      - 俄罗斯RU-T
-      - 哈萨克斯坦KZ-T
-      - 乌克兰UA-T
-      - 以色列IL-T
-      - 阿根廷AR-T
-      - 尼日利亚NI-T
+# proxy-groups:
+#   - name: Manual
+#     type: select
+#     proxies:
+#       - Fastest
+#       - 香港HY-优化
+#       - 香港HY-优化2
+#       - 香港WAP-优化
+#       - 香港WAP-优化2
+#       - 香港wap-T
+#       - 台湾WAP-T-GPT
+#       - 台湾-优化
+#       - 台湾-优化2-GPT
+#       - 台湾-优化3
+#       - 新加坡SG-T
+#       - 新加坡-优化
+#       - 新加坡-优化2
+#       - 新加坡-优化3
+#       - 日本-优化
+#       - 日本-优化2
+#       - 日本-优化3
+#       - 日本JP-T
+#       - 美国USLA-T-GPT
+#       - 美国LA-优化-GPT
+#       - 美国LA-优化2-GPT
+#       - 美国LA-优化3-GPT
+#       - 加拿大-优化
+#       - 加拿大-优化2
+#       - 加拿大-优化3
+#       - 德国-优化
+#       - 德国-优化2
+#       - 英国-优化-GPT
+#       - 英国-优化2
+#       - 英国-优化3
+#       - 英国UK-T
+#       - 澳大利亚AU-T
+#       - 柬埔寨KH-T
+#       - 越南VN-T
+#       - 印度-优化
+#       - 土耳其TR-T
+#       - 朝鲜KP-T
+#       - 意大利IT-T
+#       - 葡萄牙PT-T
+#       - 俄罗斯RU-T
+#       - 哈萨克斯坦KZ-T
+#       - 乌克兰UA-T
+#       - 以色列IL-T
+#       - 阿根廷AR-T
+#       - 尼日利亚NI-T
 
-  - name: Japan
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    proxies:
-      - 日本-优化
-      - 日本-优化2
-      - 日本-优化3
-      - 日本JP-T
+#   - name: Japan
+#     type: url-test
+#     url: http://www.gstatic.com/generate_204
+#     interval: 300
+#     proxies:
+#       - 日本-优化
+#       - 日本-优化2
+#       - 日本-优化3
+#       - 日本JP-T
 
-  - name: Taiwan
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    proxies:
-      - 台湾WAP-T-GPT
-      - 台湾-优化
-      - 台湾-优化2-GPT
-      - 台湾-优化3
+#   - name: Taiwan
+#     type: url-test
+#     url: http://www.gstatic.com/generate_204
+#     interval: 300
+#     proxies:
+#       - 台湾WAP-T-GPT
+#       - 台湾-优化
+#       - 台湾-优化2-GPT
+#       - 台湾-优化3
 
-  - name: Fastest
-    type: url-test
-    proxies:
-      - 日本-优化
-      - 日本-优化2
-      - 日本-优化3
-      - 日本JP-T
-      - 新加坡SG-T
-      - 柬埔寨KH-T
-      - 美国USLA-T-GPT
-      - 新加坡-优化
-      - 新加坡-优化2
-      - 新加坡-优化3
-      - 台湾WAP-T-GPT
-      - 越南VN-T
-      - 印度-优化
-      - 台湾-优化
-      - 台湾-优化2-GPT
-      - 台湾-优化3
-      - 美国LA-优化-GPT
-      - 美国LA-优化2-GPT
-      - 美国LA-优化3-GPT
-      - 加拿大-优化
-      - 加拿大-优化2
-      - 加拿大-优化3
-      - 德国-优化
-      - 德国-优化2
-      - 英国-优化-GPT
-      - 英国-优化2
-      - 英国-优化3
-      - 澳大利亚AU-T
-      - 土耳其TR-T
-      - 朝鲜KP-T
-      - 意大利IT-T
-      - 葡萄牙PT-T
-      - 俄罗斯RU-T
-      - 哈萨克斯坦KZ-T
-      - 乌克兰UA-T
-      - 以色列IL-T
-      - 英国UK-T
-      - 阿根廷AR-T
-      - 尼日利亚NI-T
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+#   - name: Fastest
+#     type: url-test
+#     proxies:
+#       - 日本-优化
+#       - 日本-优化2
+#       - 日本-优化3
+#       - 日本JP-T
+#       - 新加坡SG-T
+#       - 柬埔寨KH-T
+#       - 美国USLA-T-GPT
+#       - 新加坡-优化
+#       - 新加坡-优化2
+#       - 新加坡-优化3
+#       - 台湾WAP-T-GPT
+#       - 越南VN-T
+#       - 印度-优化
+#       - 台湾-优化
+#       - 台湾-优化2-GPT
+#       - 台湾-优化3
+#       - 美国LA-优化-GPT
+#       - 美国LA-优化2-GPT
+#       - 美国LA-优化3-GPT
+#       - 加拿大-优化
+#       - 加拿大-优化2
+#       - 加拿大-优化3
+#       - 德国-优化
+#       - 德国-优化2
+#       - 英国-优化-GPT
+#       - 英国-优化2
+#       - 英国-优化3
+#       - 澳大利亚AU-T
+#       - 土耳其TR-T
+#       - 朝鲜KP-T
+#       - 意大利IT-T
+#       - 葡萄牙PT-T
+#       - 俄罗斯RU-T
+#       - 哈萨克斯坦KZ-T
+#       - 乌克兰UA-T
+#       - 以色列IL-T
+#       - 英国UK-T
+#       - 阿根廷AR-T
+#       - 尼日利亚NI-T
+#     url: http://www.gstatic.com/generate_204
+#     interval: 300
 
   
 
@@ -279,15 +279,15 @@ rules:
 
 # 8.  非直连
 # 一般
-- DOMAIN-SUFFIX,manhuagui.com,Japan
-- DOMAIN-SUFFIX,mhgui.com,Japan
-- DOMAIN-SUFFIX,hamreus.com,Japan
+# - DOMAIN-SUFFIX,manhuagui.com,Japan
+# - DOMAIN-SUFFIX,mhgui.com,Japan
+# - DOMAIN-SUFFIX,hamreus.com,Japan
 # 日系
-- DOMAIN-SUFFIX,dlsite.com,Japan
-- DOMAIN-SUFFIX,dmm.com,Japan
+# - DOMAIN-SUFFIX,dlsite.com,Japan
+# - DOMAIN-SUFFIX,dmm.com,Japan
 # 谷歌ai
-- DOMAIN-SUFFIX,gemini.google.com,Manual
-- DOMAIN-SUFFIX,aistudio.google.com,Manual
+# - DOMAIN-SUFFIX,gemini.google.com,Manual
+# - DOMAIN-SUFFIX,aistudio.google.com,Manual
 
 # 9. 兜底：全走代理
 - MATCH,hy2
