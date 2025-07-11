@@ -42,6 +42,7 @@ proxy-groups:
       - 🇺🇸US3-C
       - 🇺🇸US4-C
       - 🇺🇸US5-C
+      - hy2
 
   # - name: Japan
   #   type: url-test
