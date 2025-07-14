@@ -27,8 +27,6 @@ dns:
   fallback:
     - tls://8.8.4.4
     - tls://1.1.1.1
-  direct-nameserver:
-    - system
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -38,6 +36,8 @@ dns:
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
+      - '+.twitter.com'
+      - '+.telegram.org'
 
 
 geodata-mode: true
