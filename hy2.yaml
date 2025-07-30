@@ -62,7 +62,6 @@ proxy-groups:
     proxies:
       - hy2
       - vless
-      - tuic
       
       - sudafei
 
@@ -96,7 +95,8 @@ proxy-groups:
     type: fallback
     proxies:
      - vless
-     - hy2     
+     - hy2
+     
      - sudafei
     #  - Speed
     #  - Fastest
