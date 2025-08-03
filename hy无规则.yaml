@@ -1,0 +1,220 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: :9090
+
+dns:
+  enable: true
+  cache-algorithm: arc
+  prefer-h3: false
+  use-hosts: true
+  use-system-hosts: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - '*.lan'
+  nameserver-policy:
+    '+.arpa': '10.0.0.1'
+  nameserver:
+    - system
+  fallback:
+    - tls://8.8.4.4
+    - tls://1.1.1.1
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - '+.twitter.com'
+      - '+.telegram.org'
+
+
+geodata-mode: true
+geox-url:
+  geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
+  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb"
+geo-auto-update: true
+geo-update-interval: 24
+
+
+proxies:
+  - {type: hysteria2,name: hy2, server: 107.172.5.56, port: 443, client-fingerprint: chrome,   password: kirkir.top,   sni: 7533666.top,   skip-cert-verify: true, udp: true, }
+  - {name: vless, server: 107.172.5.56, port: 9999, reality-opts: {public-key: eXOY8DY5ZSAroF_GsdswZuRPZje4dB6AvoN3RtK64zI}, client-fingerprint: chrome, type: vless, uuid: 93b9d647-6a3d-454f-cdc4-282280ce6aed, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: amd.com, network: tcp}
+  
+  - {name: sudafei, server: 23.94.84.94, port: 443, client-fingerprint: chrome, type: hysteria2, password: 123456, sni: sudafeiguohai.top, skip-cert-verify: false, udp: true}
+
+  
+proxy-groups:
+  - name: Manual
+    type: select
+    proxies:
+      - hy2
+      - vless
+      
+      - sudafei
+
+  # - name: Japan
+  #   type: url-test
+  #   url: http://www.gstatic.com/generate_204
+  #   interval: 300
+  #   proxies:
+
+  # - name: Taiwan
+  #   type: url-test
+  #   url: http://www.gstatic.com/generate_204
+  #   interval: 300
+  #   proxies:
+
+  # - name: Fastest
+  #   type: url-test
+  #   proxies:
+      
+  #   url: http://www.gstatic.com/generate_204
+  #   interval: 300
+
+  # - name: Speed
+  #   type: url-test
+  #   proxies:
+    
+  #   url: http://www.gstatic.com/generate_204
+  #   interval: 300
+
+  - name: Fallback
+    type: fallback
+    proxies:
+     - vless
+     - hy2
+     
+     - sudafei
+    #  - Speed
+    #  - Fastest
+
+
+# rule-providers:
+#   reject:
+#     type: http
+#     behavior: domain
+#     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+#     path: ./ruleset/reject.yaml
+#     interval: 86400
+
+#   proxy:
+#     type: http
+#     behavior: domain
+#     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+#     path: ./ruleset/proxy.yaml
+#     interval: 86400
+
+#   direct:
+#     type: http
+#     behavior: domain
+#     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+#     path: ./ruleset/direct.yaml
+#     interval: 86400
+
+#   private:
+#     type: http
+#     behavior: domain
+#     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
+#     path: ./ruleset/private.yaml
+#     interval: 86400
+
+#   gfw:
+#     type: http
+#     behavior: domain
+#     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+#     path: ./ruleset/gfw.yaml
+#     interval: 86400
+
+#   telegramcidr:
+#     type: http
+#     behavior: ipcidr
+#     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+#     path: ./ruleset/telegramcidr.yaml
+#     interval: 86400
+
+#   cncidr:
+#     type: http
+#     behavior: ipcidr
+#     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+#     path: ./ruleset/cncidr.yaml
+#     interval: 86400
+
+
+#   applications:
+#     type: http
+#     behavior: classical
+#     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
+#     path: ./ruleset/applications.yaml
+#     interval: 86400
+
+#   # 照葫芦画瓢
+#   GoogleFCM_No_Resolve:
+#     type: http
+#     behavior: classical
+#     url: "https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash/GoogleFCM/GoogleFCM_No_Resolve.yaml"
+#     path: ./ruleset/GoogleFCM_No_Resolve.yaml
+#     interval: 86400
+
+
+rules:
+
+# 2. 中国大陆IP直连
+- GEOIP,CN,DIRECT
+
+# 3. 中国大陆域名直连
+- GEOSITE,CN,DIRECT
+
+# 4. 自定义规则直连
+#- DOMAIN-SUFFIX,fishhawk.top,DIRECT
+- DOMAIN-SUFFIX,warhut.cn,DIRECT
+- DOMAIN-SUFFIX,cycanime.com,DIRECT
+- DOMAIN-SUFFIX,8xsk.com,DIRECT
+- DOMAIN-SUFFIX,steamdb.info,DIRECT
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- DOMAIN-SUFFIX,steamcontent.com,DIRECT
+
+# # 5. 系统/应用直连
+# - RULE-SET,direct,DIRECT
+# - RULE-SET,applications,DIRECT
+# - RULE-SET,GoogleFCM_No_Resolve,DIRECT
+
+# # 6. 私有IP和局域网段直连
+# - RULE-SET,private,DIRECT
+# - RULE-SET,cncidr,DIRECT
+
+# # 7. 拒绝广告
+# - RULE-SET,reject,REJECT
+
+# 8.  非直连
+# 一般
+- DOMAIN-SUFFIX,manhuagui.com,Manual
+- DOMAIN-SUFFIX,mhgui.com,Manual
+- DOMAIN-SUFFIX,hamreus.com,Manual
+- DOMAIN-SUFFIX,youtube-nocookie.com,Manual
+- DOMAIN-SUFFIX,googlevideo.com,Manual
+
+
+# 日系
+# - DOMAIN-SUFFIX,dlsite.com,Japan
+# - DOMAIN-SUFFIX,dmm.com,Japan
+#谷歌ai
+- DOMAIN-SUFFIX,gemini.google.com,Manual
+- DOMAIN-SUFFIX,clients6.google.com,Manual
+# - DOMAIN-SUFFIX,aistudio.google.com,Manual
+
+# 9. 兜底：全走代理
+- MATCH,Fallback
