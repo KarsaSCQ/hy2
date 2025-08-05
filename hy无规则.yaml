@@ -28,8 +28,8 @@ dns:
     - tls://8.8.4.4
     - tls://1.1.1.1
   fallback-filter:
-    geoip: true
-    geoip-code: CN
+    # geoip: true
+    # geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
     domain:
@@ -40,13 +40,13 @@ dns:
       - '+.telegram.org'
 
 
-geodata-mode: true
-geox-url:
-  geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
-  geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
-  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb"
-geo-auto-update: true
-geo-update-interval: 24
+# geodata-mode: true
+# geox-url:
+#   geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+#   geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
+#   mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb"
+# geo-auto-update: true
+# geo-update-interval: 24
 
 
 proxies:
@@ -172,10 +172,10 @@ proxy-groups:
 rules:
 
 # 2. 中国大陆IP直连
-- GEOIP,CN,DIRECT
+# - GEOIP,CN,DIRECT
 
-# 3. 中国大陆域名直连
-- GEOSITE,CN,DIRECT
+# # 3. 中国大陆域名直连
+# - GEOSITE,CN,DIRECT
 
 # 4. 自定义规则直连
 #- DOMAIN-SUFFIX,fishhawk.top,DIRECT
