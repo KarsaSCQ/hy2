@@ -207,6 +207,10 @@ rules:
 - DOMAIN-SUFFIX,youtube-nocookie.com,Manual
 - DOMAIN-SUFFIX,googlevideo.com,Manual
 
+# 指定代理
+- DOMAIN-SUFFIX,x.ai,hy2
+
+
 
 # 日系
 # - DOMAIN-SUFFIX,dlsite.com,Japan
