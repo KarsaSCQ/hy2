@@ -57,7 +57,7 @@ proxies:
 
   
 proxy-groups:
-  - name: Manual
+  - name: Special
     type: select
     proxies:
       - hy2
@@ -91,8 +91,8 @@ proxy-groups:
   #   url: http://www.gstatic.com/generate_204
   #   interval: 300
 
-  - name: Fallback
-    type: fallback
+  - name: Manual
+    type: select
     proxies:
      - vless
      - hy2
@@ -201,11 +201,10 @@ rules:
 
 # 8.  非直连
 # 一般
-- DOMAIN-SUFFIX,manhuagui.com,Manual
-- DOMAIN-SUFFIX,mhgui.com,Manual
-- DOMAIN-SUFFIX,hamreus.com,Manual
-- DOMAIN-SUFFIX,youtube-nocookie.com,Manual
-- DOMAIN-SUFFIX,googlevideo.com,Manual
+- DOMAIN-SUFFIX,manhuagui.com,Special
+- DOMAIN-SUFFIX,mhgui.com,Special
+- DOMAIN-SUFFIX,hamreus.com,Special
+- DOMAIN-SUFFIX,youtube-nocookie.com,Special- DOMAIN-SUFFIX,googlevideo.com,Special
 
 # 指定代理
 - DOMAIN-SUFFIX,x.ai,hy2
@@ -216,9 +215,8 @@ rules:
 # - DOMAIN-SUFFIX,dlsite.com,Japan
 # - DOMAIN-SUFFIX,dmm.com,Japan
 #谷歌ai
-- DOMAIN-SUFFIX,gemini.google.com,Manual
-- DOMAIN-SUFFIX,clients6.google.com,Manual
-# - DOMAIN-SUFFIX,aistudio.google.com,Manual
+- DOMAIN-SUFFIX,gemini.google.com,Special
+- DOMAIN-SUFFIX,clients6.google.com,Special# - DOMAIN-SUFFIX,aistudio.google.com,Special
 
 # 9. 兜底：全走代理
-- MATCH,Fallback
+- MATCH,Manual
