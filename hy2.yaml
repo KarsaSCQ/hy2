@@ -1,4 +1,4 @@
-port: 7890
+uport: 7890
 socks-port: 7891
 allow-lan: true
 mode: rule
@@ -204,7 +204,8 @@ rules:
 - DOMAIN-SUFFIX,manhuagui.com,Special
 - DOMAIN-SUFFIX,mhgui.com,Special
 - DOMAIN-SUFFIX,hamreus.com,Special
-- DOMAIN-SUFFIX,youtube-nocookie.com,Special- DOMAIN-SUFFIX,googlevideo.com,Special
+- DOMAIN-SUFFIX,youtube-nocookie.com,Special         
+- DOMAIN-SUFFIX,googlevideo.com,Special
 
 # 指定代理
 - DOMAIN-SUFFIX,x.ai,hy2
