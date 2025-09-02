@@ -218,7 +218,10 @@ rules:
 # - DOMAIN-SUFFIX,dmm.com,Japan
 #谷歌ai
 - DOMAIN-SUFFIX,gemini.google.com,Special
-- DOMAIN-SUFFIX,clients6.google.com,Special# - DOMAIN-SUFFIX,aistudio.google.com,Special
+
+- DOMAIN-SUFFIX,clients6.google.com,Special# 
+
+- DOMAIN-SUFFIX,aistudio.google.com,Special
 
 # 9. 兜底：全走代理
 - MATCH,Manual
