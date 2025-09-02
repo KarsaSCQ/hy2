@@ -204,6 +204,7 @@ rules:
 - DOMAIN-SUFFIX,manhuagui.com,Special
 - DOMAIN-SUFFIX,mhgui.com,Special
 - DOMAIN-SUFFIX,hamreus.com,Special
+
 - DOMAIN-SUFFIX,youtube-nocookie.com,Special         
 - DOMAIN-SUFFIX,googlevideo.com,Special
 
