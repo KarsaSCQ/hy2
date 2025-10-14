@@ -1,4 +1,4 @@
-port: 7890
+uport: 7890
 socks-port: 7891
 allow-lan: true
 mode: rule
@@ -53,53 +53,54 @@ proxies:
   - {type: hysteria2,name: hy2, server: 107.172.5.56, port: 443, client-fingerprint: chrome,   password: kirkir.top,   sni: 7533666.top,   skip-cert-verify: true, udp: true, }
   - {name: vless, server: 107.172.5.56, port: 9999, reality-opts: {public-key: eXOY8DY5ZSAroF_GsdswZuRPZje4dB6AvoN3RtK64zI}, client-fingerprint: chrome, type: vless, uuid: 93b9d647-6a3d-454f-cdc4-282280ce6aed, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: amd.com, network: tcp}
   
-  - {name: sudafei, server: 23.94.84.94, port: 443, client-fingerprint: chrome, type: hysteria2, password: 123456, sni: sudafeiguohai.top, skip-cert-verify: false, udp: true}
+  # - {name: sudafei, server: 23.94.84.94, port: 443, client-fingerprint: chrome, type: hysteria2, password: 123456, sni: sudafeiguohai.top, skip-cert-verify: false, udp: true}
+
+  - {name: 🇺🇸 美国 50, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560fp=chrome", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: 🇺🇸 美国 39, server: 5.182.84.22, port: 2096, type: trojan, password: Aimer, sni: epge.muarua.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epge.muarua.filegear-sg.me}}, udp: true}
+  - {name: 🇺🇸 美国 12, server: entrance04.qqa678.cc, port: 47084, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 01, server: 03e37e-330-co.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 03e37e-330-co.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 02, server: 03e37e-330-co-2.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 03e37e-330-co.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 36, server: 1e3fb9-330-co-3.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 1e3fb9-330-co.9966661.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 13, server: 38.180.30.147, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: IDJY0hgIuUk7, udp: true}
+  - {name: 🇯🇵 日本 03, server: entrance02.qqa678.cc, port: 47083, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 12, server: 59.36.143.125, port: 35248, type: vless, uuid: 823e8b29-7d63-4af6-92f0-f94623b7030c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc, short-id: "c8c0f951" }, servername: www.lamer.com.hk, client-fingerprint: chrome, network: tcp, udp: true}
+
 
   
 proxy-groups:
-  - name: Manual
+  - name: 手动选择
+    type: select
+    proxies:
+     - vless
+     - hy2
+     - Fastest
+     
+    #  - sudafei
+
+
+  - name: 特殊节点
     type: select
     proxies:
       - hy2
       - vless
-      
-      - sudafei
+      - Fastest
+      - 🇭🇰 香港 12
 
-  # - name: Japan
-  #   type: url-test
-  #   url: http://www.gstatic.com/generate_204
-  #   interval: 300
-  #   proxies:
+      # - sudafei
 
-  # - name: Taiwan
-  #   type: url-test
-  #   url: http://www.gstatic.com/generate_204
-  #   interval: 300
-  #   proxies:
-
-  # - name: Fastest
-  #   type: url-test
-  #   proxies:
-      
-  #   url: http://www.gstatic.com/generate_204
-  #   interval: 300
-
-  # - name: Speed
-  #   type: url-test
-  #   proxies:
-    
-  #   url: http://www.gstatic.com/generate_204
-  #   interval: 300
-
-  - name: Fallback
-    type: fallback
+  - name: Fastest
+    type: url-test
     proxies:
-     - vless
-     - hy2
-     
-     - sudafei
-    #  - Speed
-    #  - Fastest
+      - 🇺🇸 美国 50
+      - 🇺🇸 美国 39
+      - 🇺🇸 美国 12
+      - 🇺🇸 美国 01
+      - 🇺🇸 美国 02
+      - 🇺🇸 美国 36
+      - 🇬🇧 英国 13
+      - 🇯🇵 日本 03
+    url: http://www.gstatic.com/generate_204
+    interval: 300
 
 
 rule-providers:
@@ -201,24 +202,19 @@ rules:
 
 # 8.  非直连
 # 一般
-- DOMAIN-SUFFIX,manhuagui.com,Manual
-- DOMAIN-SUFFIX,mhgui.com,Manual
-- DOMAIN-SUFFIX,hamreus.com,Manual
-- DOMAIN-SUFFIX,youtube-nocookie.com,Manual
-- DOMAIN-SUFFIX,googlevideo.com,Manual
+- DOMAIN-SUFFIX,manhuagui.com,特殊节点
+- DOMAIN-SUFFIX,mhgui.com,特殊节点
+- DOMAIN-SUFFIX,hamreus.com,特殊节点
+
+- DOMAIN-SUFFIX,youtube-nocookie.com,特殊节点         
+- DOMAIN-SUFFIX,googlevideo.com,特殊节点
+
+- DOMAIN-SUFFIX,gemini.google.com,特殊节点
+- DOMAIN-SUFFIX,clients6.google.com,特殊节点
 
 # 指定代理
-- DOMAIN-SUFFIX,x.ai,hy2
-
-
-
-# 日系
-# - DOMAIN-SUFFIX,dlsite.com,Japan
-# - DOMAIN-SUFFIX,dmm.com,Japan
-#谷歌ai
-- DOMAIN-SUFFIX,gemini.google.com,Manual
-- DOMAIN-SUFFIX,clients6.google.com,Manual
-# - DOMAIN-SUFFIX,aistudio.google.com,Manual
+- DOMAIN-SUFFIX,dlsite.com, 🇯🇵 日本 03
+- DOMAIN-SUFFIX,dmm.com, 🇯🇵 日本 03
 
 # 9. 兜底：全走代理
-- MATCH,Fallback
+- MATCH,手动选择
