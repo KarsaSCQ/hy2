@@ -60,7 +60,6 @@ proxies:
   - {name: 🇺🇸 美国 12, server: entrance04.qqa678.cc, port: 47084, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 01, server: 03e37e-330-co.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 03e37e-330-co.9966661.xyz, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国 02, server: 03e37e-330-co-2.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 03e37e-330-co.9966661.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 36, server: 1e3fb9-330-co-3.9966661.xyz, port: 3000, type: hysteria2, password: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, auth: abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d, sni: 1e3fb9-330-co.9966661.xyz, skip-cert-verify: false, udp: true}
   - {name: 🇬🇧 英国 13, server: 38.180.30.147, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: IDJY0hgIuUk7, udp: true}
   - {name: 🇯🇵 日本 03, server: entrance02.qqa678.cc, port: 47083, type: vmess, uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港 12, server: 59.36.143.125, port: 35248, type: vless, uuid: 823e8b29-7d63-4af6-92f0-f94623b7030c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc, short-id: "c8c0f951" }, servername: www.lamer.com.hk, client-fingerprint: chrome, network: tcp, udp: true}
@@ -97,7 +96,6 @@ proxy-groups:
       - 🇺🇸 美国 12
       - 🇺🇸 美国 01
       - 🇺🇸 美国 02
-      - 🇺🇸 美国 36
       - 🇬🇧 英国 13
       - 🇯🇵 日本 03
     url: http://www.gstatic.com/generate_204
