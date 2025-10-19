@@ -171,6 +171,10 @@ rule-providers:
 
 rules:
 
+# 1. 白名单
+- IP-CIDR,26.241.78.240/32,DIRECT
+- IP-CIDR,26.204.202.44/32,DIRECT
+
 # 2. 中国大陆IP直连
 - GEOIP,CN,DIRECT
 
