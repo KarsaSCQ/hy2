@@ -1,10 +1,3 @@
-uport: 7890
-socks-port: 7891
-allow-lan: true
-mode: rule
-log-level: info
-external-controller: :9090
-
 dns:
   enable: true
   cache-algorithm: arc
@@ -34,7 +27,6 @@ dns:
       - 240.0.0.0/4
     domain:
       - '+.google.com'
-      - '+.facebook.com'
       - '+.youtube.com'
       - '+.twitter.com'
       - '+.telegram.org'
