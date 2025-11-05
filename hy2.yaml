@@ -45,7 +45,7 @@ proxies:
   - {type: hysteria2,name: hy2, server: 107.172.5.56, port: 443, client-fingerprint: chrome,   password: kirkir.top,   sni: 7533666.top,   skip-cert-verify: true, udp: true, }
   - {name: vless, server: 107.172.5.56, port: 9999, reality-opts: {public-key: eXOY8DY5ZSAroF_GsdswZuRPZje4dB6AvoN3RtK64zI}, client-fingerprint: chrome, type: vless, uuid: 93b9d647-6a3d-454f-cdc4-282280ce6aed, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: amd.com, network: tcp}
   
-  # - {name: sudafei, server: 23.94.84.94, port: 443, client-fingerprint: chrome, type: hysteria2, password: 123456, sni: sudafeiguohai.top, skip-cert-verify: false, udp: true}
+  - {name: vless-2, server: 23.94.84.94, port: 443, reality-opts: {public-key: 9GgzQRVDfYbL4kXLyLcmNe41WgKA7PL_otZCVr0dfH4}, client-fingerprint: chrome, type: vless, uuid: a82b4add-876e-44a0-b2ae-418e865b563f, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: false, servername: r.bing.com, network: tcp}
 
   - {name: 🇺🇸 美国 50, server: 188.42.145.253, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560fp=chrome", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
   - {name: 🇺🇸 美国 39, server: 5.182.84.22, port: 2096, type: trojan, password: Aimer, sni: epge.muarua.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epge.muarua.filegear-sg.me}}, udp: true}
@@ -64,6 +64,7 @@ proxy-groups:
     proxies:
      - vless
      - hy2
+     - vless-2
      - Fastest
      - 🇭🇰 香港 12
      
@@ -75,6 +76,7 @@ proxy-groups:
     proxies:
       - hy2
       - vless
+      - vless-2
       - Fastest
       - 🇭🇰 香港 12
 
@@ -209,8 +211,8 @@ rules:
 - DOMAIN-SUFFIX,clients6.google.com,特殊节点
 
 # 指定代理
-- DOMAIN-SUFFIX,dlsite.com, 🇯🇵 日本 03
-- DOMAIN-SUFFIX,dmm.com, 🇯🇵 日本 03
+# - DOMAIN-SUFFIX,dlsite.com, 🇯🇵 日本 03
+# - DOMAIN-SUFFIX,dmm.com, 🇯🇵 日本 03
 
 # 9. 兜底：全走代理
 - MATCH,手动选择
