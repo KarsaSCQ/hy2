@@ -184,6 +184,7 @@ rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+- DOMAIN-SUFFIX,cycani.org,DIRECT
 
 # 5. 系统/应用直连
 - RULE-SET,direct,DIRECT
