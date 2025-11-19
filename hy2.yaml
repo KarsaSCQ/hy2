@@ -210,6 +210,8 @@ rules:
 - DOMAIN-SUFFIX,clients4.google.com,特殊节点
 - DOMAIN-SUFFIX,gemini.google.com,特殊节点
 - DOMAIN-SUFFIX,clients6.google.com,特殊节点
+- DOMAIN-SUFFIX,googleapis.com,特殊节点
+
 
 # 指定代理
 # - DOMAIN-SUFFIX,dlsite.com, 🇯🇵 日本 03
