@@ -204,8 +204,8 @@ rules:
 - DOMAIN-SUFFIX,mhgui.com,特殊节点
 - DOMAIN-SUFFIX,hamreus.com,特殊节点
 
-- DOMAIN-SUFFIX,youtube-nocookie.com,特殊节点         
-- DOMAIN-SUFFIX,googlevideo.com,特殊节点
+# - DOMAIN-SUFFIX,youtube-nocookie.com,特殊节点         
+# - DOMAIN-SUFFIX,googlevideo.com,特殊节点
 
 - DOMAIN-SUFFIX,clients4.google.com,特殊节点
 - DOMAIN-SUFFIX,gemini.google.com,特殊节点
